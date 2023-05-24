@@ -1,3 +1,3 @@
 output "read_output_data" {
-  value = "read-${module.files.content}"
+  value = "read-${var.input_data}"
 }
