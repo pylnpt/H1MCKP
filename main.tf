@@ -11,4 +11,7 @@ module "write" {
   answer_3  = var.answer_3
   answer_4  = var.answer_4
   answer_5  = var.answer_5
+module "read" {
+  source        = "./modules/read"
+  input_data  = module.files.content
 }
