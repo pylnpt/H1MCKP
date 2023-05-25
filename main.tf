@@ -4,6 +4,11 @@ module "files" {
   name    = "FirstTask"
 }
 
+module "read" {
+  source        = "./modules/read"
+  input_data  = module.files.content
+}
+
 module "write" {
   source = "./modules/write"
 
@@ -21,3 +26,4 @@ locals {
 output "all_answers" {
   value = local.answers
 }
+
