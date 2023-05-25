@@ -9,6 +9,12 @@ module "read" {
   input_data  = module.files.content
 }
 
+module "data" {
+  source = "./modules/data"
+  generated_file_path = var.path
+  depends_on = [ module.read ]
+}
+
 module "write" {
   source = "./modules/write"
 
@@ -26,4 +32,3 @@ locals {
 output "all_answers" {
   value = local.answers
 }
-
