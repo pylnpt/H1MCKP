@@ -1,5 +1,3 @@
-answer_1 = "init"
-answer_2 = "tuple"
-answer_3 = "while"
-answer_4 = "put them in the same module"
-answer_5 = "using -var flag"
+answers = ["Init", "Int", "While", "Using meta-argument", "Using -var flag"]
+
+path = "./modules/files/CreatedFiles/FirstTask_0"

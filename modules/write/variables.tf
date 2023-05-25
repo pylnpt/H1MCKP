@@ -1,5 +1,19 @@
-variable "answer_1" {}
-variable "answer_2" {}
-variable "answer_3" {}
-variable "answer_4" {}
-variable "answer_5" {}
+variable "answer1" {
+  type = string
+}
+
+variable "answer2" {
+  type = string
+}
+
+variable "answer3" {
+  type = string
+}
+
+variable "answer4" {
+  type = string
+}
+
+variable "answer5" {
+  type = string
+}

@@ -1,19 +1,9 @@
-output "answer_1" {
-  value = var.answer_1
-}
-
-output "answer_2" {
-  value = var.answer_2
-}
-
-output "answer_3" {
-  value = var.answer_3
-}
-
-output "answer_4" {
-  value = var.answer_4
-}
-
-output "answer_5" {
-  value = var.answer_5
+output "all_answers" {
+  value = [
+    var.answer1,
+    var.answer2,
+    var.answer3,
+    var.answer4,
+    var.answer5
+  ]
 }

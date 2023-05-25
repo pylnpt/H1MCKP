@@ -5,10 +5,19 @@ module "files" {
 }
 
 module "write" {
-  source     = "./modules/write"
-  answer_1  = var.answer_1
-  answer_2  = var.answer_2
-  answer_3  = var.answer_3
-  answer_4  = var.answer_4
-  answer_5  = var.answer_5
+  source = "./modules/write"
+
+  answer1 = var.answers[0]
+  answer2 = var.answers[1]
+  answer3 = var.answers[2]
+  answer4 = var.answers[3]
+  answer5 = var.answers[4]
+}
+
+locals {
+  answers = module.write.all_answers
+}
+
+output "all_answers" {
+  value = local.answers
 }
